@@ -12,8 +12,9 @@
 *               Please help us continue to provide the Embedded community with the finest
 *               software available.  Your honesty is greatly appreciated.
 *
-*               You can find information about uC/LIB by visiting doc.micrium.com.
-*               You can contact us at: www.micrium.com
+*                    You can find our product's documentation at: doc.micrium.com
+*
+*                          For more information visit us at: www.micrium.com
 *********************************************************************************************************
 */
 
@@ -22,11 +23,12 @@
 *
 *                                  CUSTOM LIBRARY CONFIGURATION FILE
 *
+*                                              TEMPLATE
+*
 * Filename : lib_cfg.h
-* Version  : V1.38.02.00
+* Version  : V1.38.03
 *********************************************************************************************************
 */
-
 
 /*
 *********************************************************************************************************
@@ -79,7 +81,7 @@
                                                                 /* Assembly-optimized function(s).                      */
                                                                 /* Enable/disable assembly-optimized memory ...         */
                                                                 /* ... function(s). [see Note #1]                       */
-#define  LIB_MEM_CFG_OPTIMIZE_ASM_EN    DEF_ENABLED
+#define  LIB_MEM_CFG_OPTIMIZE_ASM_EN    DEF_DISABLED
 
 
 /*
