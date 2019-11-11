@@ -95,3 +95,29 @@ void task_rtc(void)
 	
 	}
 }
+
+  /*
+   * Initialize Clock module.
+   */
+  void osalClockInit( void );
+
+/*********************************************************************
+ * @fn      osalClockInit
+ *
+ * @brief   Initialize Clock module.
+ *
+ * @param   none
+ *
+ * @return  none
+ */
+void osalClockInit( void )
+{
+  CLK_ERR err;
+
+  Clk_Init(&err);
+  
+  /* initialize Clock module */
+  if ( err != CLK_ERR_NONE) {
+      printf("Init clock module error!\r\n");
+  }
+}
